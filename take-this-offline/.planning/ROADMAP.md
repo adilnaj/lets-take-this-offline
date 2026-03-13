@@ -33,8 +33,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 5 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold Next.js 15 project, install all dependencies, set up Supabase client utilities, middleware, and Wave 0 test stubs
-- [ ] 01-02-PLAN.md — Write and apply initial database schema migration (pgvector, words table, RLS), generate TypeScript types
+- [x] 01-01-PLAN.md — Scaffold Next.js 15 project, install all dependencies, set up Supabase client utilities, middleware, and Wave 0 test stubs
+- [x] 01-02-PLAN.md — Write and apply initial database schema migration (pgvector, words table, RLS), generate TypeScript types
 - [ ] 01-03-PLAN.md — Build auth UI pages (sign-in, sign-up) and route handlers (OAuth callback, email confirm)
 - [ ] 01-04-PLAN.md — Build and run idempotent seed script: Claude content generation + Voyage AI embeddings for ~100 words
 - [ ] 01-05-PLAN.md — Implement passing E2E auth tests, Vercel deployment config, human verification checkpoint
@@ -95,7 +95,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/5 | In Progress|  |
+| 1. Foundation | 2/5 | In Progress|  |
 | 2. Daily Word Experience | 0/TBD | Not started | - |
 | 3. Activities and Gamification | 0/TBD | Not started | - |
 | 4. Notifications and PWA | 0/TBD | Not started | - |
