@@ -23,10 +23,10 @@
 
 ### Auth
 
-- [ ] **AUTH-01**: User can sign up and sign in with email and password
-- [ ] **AUTH-02**: User can sign in with Google OAuth
-- [ ] **AUTH-03**: User can sign in with Apple OAuth
-- [ ] **AUTH-04**: User session persists across browser refresh
+- [x] **AUTH-01**: User can sign up and sign in with email and password
+- [x] **AUTH-02**: User can sign in with Google OAuth
+- [x] **AUTH-03**: User can sign in with Apple OAuth
+- [x] **AUTH-04**: User session persists across browser refresh
 
 ### Gamification
 
@@ -47,7 +47,7 @@
 
 - [ ] **PIPE-01**: System generates a new word daily from trending news/Hacker News signals via Claude
 - [ ] **PIPE-02**: System deduplicates new words against existing words using vector embeddings (pgvector, cosine similarity)
-- [ ] **PIPE-03**: System seeds the database with ~100 curated words before pipeline is live
+- [x] **PIPE-03**: System seeds the database with ~100 curated words before pipeline is live
 
 ### Platform
 
@@ -107,10 +107,10 @@
 | ACTV-03 | Phase 3 | Pending |
 | ACTV-04 | Phase 3 | Pending |
 | ACTV-05 | Phase 3 | Pending |
-| AUTH-01 | Phase 1 | Pending |
-| AUTH-02 | Phase 1 | Pending |
-| AUTH-03 | Phase 1 | Pending |
-| AUTH-04 | Phase 1 | Pending |
+| AUTH-01 | Phase 1 | Complete |
+| AUTH-02 | Phase 1 | Complete |
+| AUTH-03 | Phase 1 | Complete |
+| AUTH-04 | Phase 1 | Complete |
 | GAME-01 | Phase 3 | Pending |
 | GAME-02 | Phase 3 | Pending |
 | GAME-03 | Phase 3 | Pending |
@@ -122,7 +122,7 @@
 | NOTF-03 | Phase 4 | Pending |
 | PIPE-01 | Phase 5 | Pending |
 | PIPE-02 | Phase 5 | Pending |
-| PIPE-03 | Phase 1 | Pending |
+| PIPE-03 | Phase 1 | Complete |
 | PLAT-01 | Phase 4 | Pending |
 | PLAT-02 | Phase 4 | Pending |
 | PLAT-03 | Phase 2 | Pending |

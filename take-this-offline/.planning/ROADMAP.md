@@ -95,7 +95,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/5 | Planning complete | - |
+| 1. Foundation | 1/5 | In Progress|  |
 | 2. Daily Word Experience | 0/TBD | Not started | - |
 | 3. Activities and Gamification | 0/TBD | Not started | - |
 | 4. Notifications and PWA | 0/TBD | Not started | - |

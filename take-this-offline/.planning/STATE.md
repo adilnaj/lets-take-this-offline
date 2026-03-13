@@ -1,3 +1,19 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+status: planning
+stopped_at: Completed 01-foundation-01-PLAN.md
+last_updated: "2026-03-13T18:32:58.952Z"
+last_activity: 2026-03-12 — Roadmap created (5 phases, 31/31 requirements mapped)
+progress:
+  total_phases: 5
+  completed_phases: 0
+  total_plans: 5
+  completed_plans: 1
+  percent: 0
+---
+
 # Project State
 
 ## Project Reference
@@ -34,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01-foundation P01 | 5 | 2 tasks | 67 files |
 
 ## Accumulated Context
 
@@ -47,6 +64,9 @@ Recent decisions affecting current work:
 - Vector embeddings (pgvector) for semantic deduplication, not string matching
 - User timezone stored at subscription time for local-time push delivery
 - Dynamic OG images via `next/og` (bundled in App Router, no separate install)
+- [Phase 01-foundation]: src/ layout chosen over flat template layout to match planned @/lib/supabase/ import pattern
+- [Phase 01-foundation]: getClaims() used in middleware, not getSession() — validates JWT signature server-side
+- [Phase 01-foundation]: NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY used (new Supabase key naming convention)
 
 ### Pending Todos
 
@@ -59,6 +79,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-12
-Stopped at: Roadmap created — ROADMAP.md, STATE.md, and REQUIREMENTS.md traceability updated
+Last session: 2026-03-13T18:32:58.950Z
+Stopped at: Completed 01-foundation-01-PLAN.md
 Resume file: None
