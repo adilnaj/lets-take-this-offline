@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Completed 01-02-PLAN.md
-last_updated: "2026-03-13T18:36:26Z"
+status: executing
+stopped_at: Completed 01-03-PLAN.md
+last_updated: "2026-03-13T18:41:53.829Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 5
-  completed_plans: 2
+  completed_plans: 3
   percent: 40
 ---
 
@@ -52,6 +52,7 @@ Progress: [██░░░░░░░░] 40%
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 5 min | 2 tasks | 67 files |
 | Phase 01-foundation P02 | 2 min | 2 tasks | 2 files |
+| Phase 01-foundation P03 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation P02]: daily_date is DATE type (not TIMESTAMP) with UNIQUE constraint — Phase 2 routing depends on this
 - [Phase 01-foundation P02]: embedding column uses extensions.vector(1024) for voyage-3.5 model
 - [Phase 01-foundation P02]: TypeScript types hand-authored from schema; regenerate with supabase gen types after applying migration
+- [Phase 01-foundation]: Dedicated auth pages (not modals): SSR redirect flows and deep-linking work reliably with distinct routes at /auth/sign-in and /auth/sign-up
+- [Phase 01-foundation]: Route handlers use NextResponse.redirect with absolute URL (origin + path) — next/navigation redirect() requires absolute URLs in route handlers
+- [Phase 01-foundation]: Sign-up shows email confirmation message instead of redirecting — user must verify email before session is active
 
 ### Pending Todos
 
@@ -84,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-13T18:36:26Z
-Stopped at: Completed 01-02-PLAN.md
+Last session: 2026-03-13T18:41:53.826Z
+Stopped at: Completed 01-03-PLAN.md
 Resume file: None
