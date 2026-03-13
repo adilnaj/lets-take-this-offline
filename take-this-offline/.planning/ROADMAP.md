@@ -12,7 +12,7 @@ Build the full v1.0 daily vocabulary PWA using a UI-first sequence: stand up the
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project scaffold, database schema, seed data, and user auth
+- [x] **Phase 1: Foundation** - Project scaffold, database schema, seed data, and user auth (completed 2026-03-13)
 - [ ] **Phase 2: Daily Word Experience** - Core content pages, archive, SEO, OG images, and dark mode
 - [ ] **Phase 3: Activities and Gamification** - Interactive memorization loop with points, streaks, favorites, and mastery
 - [ ] **Phase 4: Notifications and PWA** - Web push, email digest, offline support, and home screen install
@@ -95,7 +95,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 4/5 | In Progress|  |
+| 1. Foundation | 5/5 | Complete   | 2026-03-13 |
 | 2. Daily Word Experience | 0/TBD | Not started | - |
 | 3. Activities and Gamification | 0/TBD | Not started | - |
 | 4. Notifications and PWA | 0/TBD | Not started | - |

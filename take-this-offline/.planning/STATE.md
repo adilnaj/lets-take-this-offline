@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-04-PLAN.md
-last_updated: "2026-03-13T18:44:59.911Z"
+stopped_at: "Checkpoint: 01-05 human-verify (Task 2 of 2)"
+last_updated: "2026-03-13T18:47:55.606Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
   percent: 40
 ---
 
@@ -54,6 +54,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 01-foundation P02 | 2 min | 2 tasks | 2 files |
 | Phase 01-foundation P03 | 2 | 2 tasks | 5 files |
 | Phase 01-foundation P04 | 1 | 1 tasks | 2 files |
+| Phase 01-foundation P05 | 2 | 1 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -79,6 +80,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: Sign-up shows email confirmation message instead of redirecting — user must verify email before session is active
 - [Phase 01-foundation]: Slug-based idempotency for seed script: check existing slug before insert — re-running is safe
 - [Phase 01-foundation]: Voyage embed text = title+definition+exec_summary — consistent with Phase 5 dedup query pattern
+- [Phase 01-foundation]: TEST_EMAIL uses Date.now() suffix for uniqueness across test runs — avoids duplicate-email conflicts if dev server state persists between E2E runs
+- [Phase 01-foundation]: vercel.json kept minimal (framework: nextjs only) — Vercel auto-detects all Next.js build settings
 
 ### Pending Todos
 
@@ -91,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-13T18:44:59.907Z
-Stopped at: Completed 01-04-PLAN.md
+Last session: 2026-03-13T18:47:43.671Z
+Stopped at: Checkpoint: 01-05 human-verify (Task 2 of 2)
 Resume file: None
