@@ -30,7 +30,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A user's session persists across browser refreshes without re-login
   4. The database contains approximately 100 curated seed words accessible to the application
   5. The app deploys to Vercel with CI passing and environment variables configured
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold Next.js 15 project, install all dependencies, set up Supabase client utilities, middleware, and Wave 0 test stubs
+- [ ] 01-02-PLAN.md — Write and apply initial database schema migration (pgvector, words table, RLS), generate TypeScript types
+- [ ] 01-03-PLAN.md — Build auth UI pages (sign-in, sign-up) and route handlers (OAuth callback, email confirm)
+- [ ] 01-04-PLAN.md — Build and run idempotent seed script: Claude content generation + Voyage AI embeddings for ~100 words
+- [ ] 01-05-PLAN.md — Implement passing E2E auth tests, Vercel deployment config, human verification checkpoint
 
 ### Phase 2: Daily Word Experience
 **Goal**: Users can read today's word with full editorial content, browse and search the archive, and share word pages with rich social previews
@@ -88,7 +95,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/5 | Planning complete | - |
 | 2. Daily Word Experience | 0/TBD | Not started | - |
 | 3. Activities and Gamification | 0/TBD | Not started | - |
 | 4. Notifications and PWA | 0/TBD | Not started | - |
