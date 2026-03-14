@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-14T20:20:38.316Z"
+stopped_at: Completed 03-04-PLAN.md
+last_updated: "2026-03-14T20:24:15.280Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 16
-  completed_plans: 11
+  completed_plans: 14
   percent: 40
 ---
 
@@ -62,6 +62,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 02-daily-word-experience P04 | 5 | 1 tasks | 1 files |
 | Phase 03-activities-and-gamification P02 | 4 | 2 tasks | 11 files |
 | Phase 03-activities-and-gamification P01 | 2 | 2 tasks | 3 files |
+| Phase 03-activities-and-gamification P04 | 4 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -104,6 +105,9 @@ Recent decisions affecting current work:
 - [Phase 03-activities-and-gamification]: UNIQUE constraint on user_activity prevents double-awarding points atomically at DB level
 - [Phase 03-activities-and-gamification]: getDisstractors and computeStreak accept SupabaseClient param for route handler reuse
 - [Phase 03-activities-and-gamification]: Streak calculation uses UTC dates consistently with rest of schema; timezone-aware streaks deferred to v2
+- [Phase 03-activities-and-gamification]: vitest.config.ts updated with @/ path alias so tests can import from @/lib/activities
+- [Phase 03-activities-and-gamification]: ignoreDuplicates upsert + count:exact used to detect new vs duplicate activity completion rows
+- [Phase 03-activities-and-gamification]: All-complete bonus idempotency: bonusAwarded only fires when isNewCompletion=true, preventing double-award on repeat calls
 
 ### Pending Todos
 
@@ -116,6 +120,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T20:20:38.313Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-03-14T20:24:01.486Z
+Stopped at: Completed 03-04-PLAN.md
 Resume file: None
