@@ -1,6 +1,9 @@
+import { createClient } from '@/lib/supabase/server'
 import { getTodaysWord } from '@/lib/words'
+import { getCompletionsToday, getUserStats, getDisstractors } from '@/lib/activities'
 import { WordCard } from '@/components/word-card'
 import { SiteHeader } from '@/components/site-header'
+import { PracticeSection } from '@/components/practice-section'
 
 export const dynamic = 'force-dynamic'
 
@@ -20,7 +23,10 @@ export async function generateMetadata() {
 }
 
 export default async function HomePage() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
   const word = await getTodaysWord()
+
   if (!word) {
     return (
       <main>
@@ -31,11 +37,23 @@ export default async function HomePage() {
       </main>
     )
   }
+
+  const completions = user ? await getCompletionsToday(user.id, word.id) : []
+  const stats = user ? await getUserStats(user.id) : null
+  const distractors = await getDisstractors(word, supabase)
+
   return (
     <main>
       <SiteHeader />
-      <div className="container max-w-2xl mx-auto py-12 px-4">
+      <div className="container max-w-2xl mx-auto py-12 px-4 space-y-8">
         <WordCard word={word} />
+        <PracticeSection
+          word={word}
+          user={user}
+          initialCompletions={completions}
+          initialStats={stats}
+          distractors={distractors}
+        />
       </div>
     </main>
   )
