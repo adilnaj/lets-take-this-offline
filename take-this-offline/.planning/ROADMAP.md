@@ -122,7 +122,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 1. Foundation | 5/5 | Complete   | 2026-03-14 |
 | 2. Daily Word Experience | 2/4 | In Progress|  |
 | 3. Activities and Gamification | 7/7 | Complete   | 2026-03-14 |
-| 4. Notifications and PWA | 0/7 | Not started | - |
+| 4. Notifications and PWA | 2/7 | In Progress|  |
 | 5. AI Pipeline | 0/TBD | Not started | - |
 
 ---

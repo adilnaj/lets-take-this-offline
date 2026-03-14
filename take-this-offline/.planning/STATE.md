@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 4 context gathered
-last_updated: "2026-03-14T20:57:35.571Z"
-last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
+stopped_at: Completed 04-notifications-and-pwa 04-01-PLAN.md
+last_updated: "2026-03-14T21:18:31.264Z"
+last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 3
-  total_plans: 16
-  completed_plans: 16
-  percent: 40
+  total_plans: 23
+  completed_plans: 18
+  percent: 44
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-12)
 
 **Core value:** Users can open Let's Take This Offline for two minutes each day and walk away actually understanding (and able to use) a piece of business or tech jargon they've been nodding along to in meetings.
-**Current focus:** Phase 1 — Foundation
+**Current focus:** Phase 4 — Notifications and PWA
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation)
-Plan: 2 of 5 in current phase
+Phase: 4 of 5 (Notifications and PWA)
+Plan: 1 of 4 in current phase
 Status: Executing
-Last activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
+Last activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 
-Progress: [██░░░░░░░░] 40%
+Progress: [████░░░░░░] 44%
 
 ## Performance Metrics
 
@@ -67,6 +67,8 @@ Progress: [██░░░░░░░░] 40%
 | Phase 03-activities-and-gamification P03 | 2 | 3 tasks | 4 files |
 | Phase 03-activities-and-gamification P06 | 2 | 2 tasks | 5 files |
 | Phase 03-activities-and-gamification P07 | 5 | 2 tasks | 7 files |
+| Phase 04-notifications-and-pwa P01 | 3 | 2 tasks | 2 files |
+| Phase 04-notifications-and-pwa P02 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -119,6 +121,9 @@ Recent decisions affecting current work:
 - [Phase 03-activities-and-gamification]: Anonymous users track activity completions locally via useState Set (no API call) — no auth required for activity UI, no 401 risk
 - [Phase 03-activities-and-gamification]: SiteHeader user prop is optional — existing callers without prop remain type-safe
 - [Phase 03-activities-and-gamification]: Supabase join cast pattern: use 'as unknown as Shape' for many-to-one joins to satisfy strict TypeScript
+- [Phase 04-notifications-and-pwa]: push_subscriptions uses UNIQUE(user_id, endpoint) to prevent duplicate device subscriptions atomically at DB level
+- [Phase 04-notifications-and-pwa]: email_digest_prefs uses user_id as PRIMARY KEY (not separate uuid id) — 1:1 user preference row, upsert-friendly
+- [Phase 04-notifications-and-pwa]: Notification types appended before words table in database.types.ts for alphabetical consistency (e, p before u, w)
 
 ### Pending Todos
 
@@ -131,6 +136,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T20:57:35.568Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-notifications-and-pwa/04-CONTEXT.md
+Last session: 2026-03-14T00:00:00.000Z
+Stopped at: Completed 04-notifications-and-pwa 04-01-PLAN.md
+Resume file: .planning/phases/04-notifications-and-pwa/04-01-SUMMARY.md
