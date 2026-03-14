@@ -1,5 +1,6 @@
 'use client'
 import { ThemeProvider } from 'next-themes'
+import { PwaRegister } from '@/components/pwa-register'
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +10,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       enableSystem
       disableTransitionOnChange
     >
+      <PwaRegister />
       {children}
     </ThemeProvider>
   )
