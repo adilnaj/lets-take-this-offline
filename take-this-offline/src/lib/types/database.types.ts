@@ -13,6 +13,85 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
+      user_activity: {
+        Row: {
+          id: string
+          user_id: string
+          word_id: string
+          activity_type: 'flashcard' | 'fill_blank' | 'sentence' | 'context_match'
+          completed_date: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          word_id: string
+          activity_type: 'flashcard' | 'fill_blank' | 'sentence' | 'context_match'
+          completed_date?: string
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          word_id?: string
+          activity_type?: 'flashcard' | 'fill_blank' | 'sentence' | 'context_match'
+          completed_date?: string
+          created_at?: string
+        }
+        Relationships: []
+      }
+      user_favorites: {
+        Row: { user_id: string; word_id: string; created_at: string }
+        Insert: { user_id: string; word_id: string; created_at?: string }
+        Update: { created_at?: string }
+        Relationships: []
+      }
+      user_stats: {
+        Row: {
+          user_id: string
+          total_points: number
+          streak_count: number
+          last_active_date: string | null
+          updated_at: string
+        }
+        Insert: {
+          user_id: string
+          total_points?: number
+          streak_count?: number
+          last_active_date?: string | null
+          updated_at?: string
+        }
+        Update: {
+          user_id?: string
+          total_points?: number
+          streak_count?: number
+          last_active_date?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      word_mastery: {
+        Row: {
+          user_id: string
+          word_id: string
+          mastery_level: 'seen' | 'learning' | 'mastered'
+          activity_count: number
+          updated_at: string
+        }
+        Insert: {
+          user_id: string
+          word_id: string
+          mastery_level?: 'seen' | 'learning' | 'mastered'
+          activity_count?: number
+          updated_at?: string
+        }
+        Update: {
+          mastery_level?: 'seen' | 'learning' | 'mastered'
+          activity_count?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       words: {
         Row: {
           id: string
