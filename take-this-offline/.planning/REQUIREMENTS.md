@@ -9,9 +9,9 @@
 
 - [x] **CONT-01**: User can view today's word page with header, executive summary, where/how used, and usage examples
 - [x] **CONT-02**: User can view "Heard in the Wild" section with paraphrased citation and source link
-- [ ] **CONT-03**: User can browse the word archive (paginated list of all past words)
-- [ ] **CONT-04**: User can search the archive by keyword
-- [ ] **CONT-05**: User can filter the archive by category and date
+- [x] **CONT-03**: User can browse the word archive (paginated list of all past words)
+- [x] **CONT-04**: User can search the archive by keyword
+- [x] **CONT-05**: User can filter the archive by category and date
 
 ### Activities
 
@@ -99,9 +99,9 @@
 |-------------|-------|--------|
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
+| CONT-03 | Phase 2 | Complete |
+| CONT-04 | Phase 2 | Complete |
+| CONT-05 | Phase 2 | Complete |
 | ACTV-01 | Phase 3 | Pending |
 | ACTV-02 | Phase 3 | Pending |
 | ACTV-03 | Phase 3 | Pending |
