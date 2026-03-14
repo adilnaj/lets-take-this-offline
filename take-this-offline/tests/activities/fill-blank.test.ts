@@ -1,9 +1,25 @@
 import { describe, it, expect } from 'vitest'
+import { generateFillBlank } from '@/lib/activities'
 
 describe('generateFillBlank', () => {
-  it.todo('replaces first occurrence of word title in definition with ___________')
-  it.todo('replacement is case-insensitive')
-  it.todo('returns the word title as the answer')
+  it('replaces first occurrence of word title in definition with ___________', () => {
+    const word = { title: 'Synergy', definition: 'Synergy is the idea that combined efforts...' } as any
+    const result = generateFillBlank(word)
+    expect(result.text).toContain('___________')
+    expect(result.text).not.toContain('Synergy')
+    expect(result.answer).toBe('Synergy')
+  })
+  it('replacement is case-insensitive', () => {
+    const word = { title: 'KPI', definition: 'A kpi is a measurable value...' } as any
+    const result = generateFillBlank(word)
+    expect(result.text).toContain('___________')
+    expect(result.text).not.toContain('kpi')
+  })
+  it('returns the word title as the answer', () => {
+    const word = { title: 'ROI', definition: 'ROI stands for return on investment' } as any
+    const result = generateFillBlank(word)
+    expect(result.answer).toBe('ROI')
+  })
 })
 
 describe('FillBlankActivity', () => {
