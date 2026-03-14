@@ -92,6 +92,50 @@ export type Database = {
         }
         Relationships: []
       }
+      email_digest_prefs: {
+        Row: {
+          user_id: string
+          enabled: boolean
+          updated_at: string
+        }
+        Insert: {
+          user_id: string
+          enabled?: boolean
+          updated_at?: string
+        }
+        Update: {
+          enabled?: boolean
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      push_subscriptions: {
+        Row: {
+          id: string
+          user_id: string
+          endpoint: string
+          auth: string
+          p256dh: string
+          timezone: string
+          notify_hour: number
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          endpoint: string
+          auth: string
+          p256dh: string
+          timezone?: string
+          notify_hour?: number
+          created_at?: string
+        }
+        Update: {
+          timezone?: string
+          notify_hour?: number
+        }
+        Relationships: []
+      }
       words: {
         Row: {
           id: string
