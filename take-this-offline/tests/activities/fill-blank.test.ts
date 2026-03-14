@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { generateFillBlank } from '@/lib/activities'
+import { generateFillBlank } from '@/components/activities/fill-blank-activity'
 
 describe('generateFillBlank', () => {
   it('replaces first occurrence of word title in definition with ___________', () => {

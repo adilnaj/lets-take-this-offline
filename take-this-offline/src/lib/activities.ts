@@ -21,17 +21,6 @@ export function deriveMasteryLevel(activityCount: number): 'seen' | 'learning' |
 }
 
 /**
- * Generates fill-in-the-blank exercise from word data.
- * Replaces the first case-insensitive occurrence of the word title
- * in the definition with '___________'.
- */
-export function generateFillBlank(word: WordRow): { text: string; answer: string } {
-  const blank = '___________'
-  const text = word.definition.replace(new RegExp(word.title, 'i'), blank)
-  return { text, answer: word.title }
-}
-
-/**
  * Returns the list of activity_type values completed today for a given user and word.
  * Uses the server Supabase client internally.
  */

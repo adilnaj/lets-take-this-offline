@@ -5,8 +5,12 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { CheckCircle2 } from 'lucide-react'
-import { generateFillBlank } from '@/lib/activities'
 import type { WordRow } from '@/lib/words'
+
+export function generateFillBlank(word: WordRow): { text: string; answer: string } {
+  const text = word.definition.replace(new RegExp(word.title, 'i'), '___________')
+  return { text, answer: word.title }
+}
 
 interface FillBlankActivityProps {
   word: WordRow
