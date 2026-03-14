@@ -39,9 +39,9 @@
 
 ### Notifications
 
-- [ ] **NOTF-01**: User can subscribe to web push notifications at a configurable local time (timezone stored)
-- [ ] **NOTF-02**: User can subscribe to daily email digest via Resend
-- [ ] **NOTF-03**: User can unsubscribe from any notification channel
+- [x] **NOTF-01**: User can subscribe to web push notifications at a configurable local time (timezone stored)
+- [x] **NOTF-02**: User can subscribe to daily email digest via Resend
+- [x] **NOTF-03**: User can unsubscribe from any notification channel
 
 ### AI Pipeline
 
@@ -51,8 +51,8 @@
 
 ### Platform
 
-- [ ] **PLAT-01**: App is installable as a PWA with home screen icon
-- [ ] **PLAT-02**: Today's word is available offline via service worker cache
+- [x] **PLAT-01**: App is installable as a PWA with home screen icon
+- [x] **PLAT-02**: Today's word is available offline via service worker cache
 - [x] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
 - [x] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
 - [x] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
@@ -117,14 +117,14 @@
 | GAME-04 | Phase 3 | Complete |
 | GAME-05 | Phase 3 | Complete |
 | GAME-06 | Phase 3 | Complete |
-| NOTF-01 | Phase 4 | Pending |
-| NOTF-02 | Phase 4 | Pending |
-| NOTF-03 | Phase 4 | Pending |
+| NOTF-01 | Phase 4 | Complete |
+| NOTF-02 | Phase 4 | Complete |
+| NOTF-03 | Phase 4 | Complete |
 | PIPE-01 | Phase 5 | Pending |
 | PIPE-02 | Phase 5 | Pending |
 | PIPE-03 | Phase 1 | Complete |
-| PLAT-01 | Phase 4 | Pending |
-| PLAT-02 | Phase 4 | Pending |
+| PLAT-01 | Phase 4 | Complete |
+| PLAT-02 | Phase 4 | Complete |
 | PLAT-03 | Phase 2 | Complete |
 | PLAT-04 | Phase 2 | Complete |
 | PLAT-05 | Phase 2 | Complete |

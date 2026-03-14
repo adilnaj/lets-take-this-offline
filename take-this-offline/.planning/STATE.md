@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 04-notifications-and-pwa 04-01-PLAN.md
-last_updated: "2026-03-14T21:18:31.264Z"
+stopped_at: Completed 04-02-PLAN.md (PWA manifest and icons)
+last_updated: "2026-03-14T21:18:37.279Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 5
@@ -124,6 +124,8 @@ Recent decisions affecting current work:
 - [Phase 04-notifications-and-pwa]: push_subscriptions uses UNIQUE(user_id, endpoint) to prevent duplicate device subscriptions atomically at DB level
 - [Phase 04-notifications-and-pwa]: email_digest_prefs uses user_id as PRIMARY KEY (not separate uuid id) — 1:1 user preference row, upsert-friendly
 - [Phase 04-notifications-and-pwa]: Notification types appended before words table in database.types.ts for alphabetical consistency (e, p before u, w)
+- [Phase 04-notifications-and-pwa]: Viewport export used for themeColor (Next.js 15 pattern) — metadata.themeColor is deprecated
+- [Phase 04-notifications-and-pwa]: Placeholder PNG icons generated via raw zlib/PNG bytes in scripts/gen-icons.mjs — no canvas or sharp dependency needed
 
 ### Pending Todos
 
@@ -136,6 +138,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T00:00:00.000Z
-Stopped at: Completed 04-notifications-and-pwa 04-01-PLAN.md
-Resume file: .planning/phases/04-notifications-and-pwa/04-01-SUMMARY.md
+Last session: 2026-03-14T21:18:37.277Z
+Stopped at: Completed 04-02-PLAN.md (PWA manifest and icons)
+Resume file: None
