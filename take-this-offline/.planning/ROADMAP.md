@@ -50,7 +50,13 @@ Plans:
   4. Each word page is server-rendered with correct meta tags visible to search engine crawlers
   5. Sharing a word URL on Slack or LinkedIn renders a dynamic OG image with the word and brand — not a generic homepage preview
   6. Dark mode activates automatically from system preference and can be toggled manually
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Supabase query functions (getTodaysWord, getWordBySlug, getArchive, searchArchive) and dark mode (ThemeProvider + toggle)
+- [ ] 02-02-PLAN.md — Today's word home page and /word/[slug] permalink with full editorial layout and SSR meta tags
+- [ ] 02-03-PLAN.md — /archive page with paginated list, keyword search, category chips, and date range filter
+- [ ] 02-04-PLAN.md — Dynamic OG image route (/api/og/[slug]) using next/og and human verification checkpoint
 
 ### Phase 3: Activities and Gamification
 **Goal**: Users can complete four interactive memorization activities per word and see their engagement reflected in points, streaks, badges, favorites, and mastery ratings
@@ -96,7 +102,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-14 |
-| 2. Daily Word Experience | 0/TBD | Not started | - |
+| 2. Daily Word Experience | 0/4 | Not started | - |
 | 3. Activities and Gamification | 0/TBD | Not started | - |
 | 4. Notifications and PWA | 0/TBD | Not started | - |
 | 5. AI Pipeline | 0/TBD | Not started | - |
