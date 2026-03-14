@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: "Checkpoint: 01-05 human-verify (Task 2 of 2)"
-last_updated: "2026-03-13T18:47:55.606Z"
+stopped_at: Completed 01-05-PLAN.md — Phase 1 Foundation complete
+last_updated: "2026-03-14T15:38:39.124Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
@@ -55,6 +55,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 01-foundation P03 | 2 | 2 tasks | 5 files |
 | Phase 01-foundation P04 | 1 | 1 tasks | 2 files |
 | Phase 01-foundation P05 | 2 | 1 tasks | 4 files |
+| Phase 01-foundation P05 | 10 | 2 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -82,6 +83,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: Voyage embed text = title+definition+exec_summary — consistent with Phase 5 dedup query pattern
 - [Phase 01-foundation]: TEST_EMAIL uses Date.now() suffix for uniqueness across test runs — avoids duplicate-email conflicts if dev server state persists between E2E runs
 - [Phase 01-foundation]: vercel.json kept minimal (framework: nextjs only) — Vercel auto-detects all Next.js build settings
+- [Phase 01-foundation]: NEXT_PUBLIC_SUPABASE_ANON_KEY used instead of PUBLISHABLE_KEY — matches Vercel-Supabase integration default injection
+- [Phase 01-foundation]: getUser() used in middleware (not getClaims()) — correct Supabase SSR API for server-side session validation
+- [Phase 01-foundation]: export const dynamic = 'force-dynamic' required on auth-dependent pages to prevent Next.js prerender errors
 
 ### Pending Todos
 
@@ -94,6 +98,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-13T18:47:43.671Z
-Stopped at: Checkpoint: 01-05 human-verify (Task 2 of 2)
+Last session: 2026-03-14T15:38:39.122Z
+Stopped at: Completed 01-05-PLAN.md — Phase 1 Foundation complete
 Resume file: None
