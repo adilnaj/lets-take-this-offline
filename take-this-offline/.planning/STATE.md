@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-03-PLAN.md
-last_updated: "2026-03-14T20:24:27.263Z"
+stopped_at: Completed 03-06-PLAN.md
+last_updated: "2026-03-14T20:28:58.901Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 2
   total_plans: 16
-  completed_plans: 14
+  completed_plans: 15
   percent: 40
 ---
 
@@ -65,6 +65,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 03-activities-and-gamification P04 | 4 | 2 tasks | 4 files |
 | Phase 03-activities-and-gamification P05 | 2 | 2 tasks | 3 files |
 | Phase 03-activities-and-gamification P03 | 2 | 3 tasks | 4 files |
+| Phase 03-activities-and-gamification P06 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -113,6 +114,8 @@ Recent decisions affecting current work:
 - [Phase 03-activities-and-gamification]: FEEDBACK_MODEL constant defined at top of route handler for easy model swap; model 'claude-haiku-3-5' used per plan (low confidence)
 - [Phase 03-activities-and-gamification]: generateFillBlank unit tests implemented as real vitest assertions since they test a pure function with no DOM dependency
 - [Phase 03-activities-and-gamification]: Activity component DOM behavior tests kept as it.todo() — vitest configured with environment:node, not jsdom; E2E via Playwright covers interactive behavior
+- [Phase 03-activities-and-gamification]: Home page remains a server component — createClient() and auth.getUser() called in page.tsx, PracticeSection receives pre-fetched data as props
+- [Phase 03-activities-and-gamification]: Anonymous users track activity completions locally via useState Set (no API call) — no auth required for activity UI, no 401 risk
 
 ### Pending Todos
 
@@ -125,6 +128,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T20:24:27.259Z
-Stopped at: Completed 03-03-PLAN.md
+Last session: 2026-03-14T20:28:58.899Z
+Stopped at: Completed 03-06-PLAN.md
 Resume file: None
