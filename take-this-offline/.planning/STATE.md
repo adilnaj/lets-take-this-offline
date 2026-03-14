@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-04-PLAN.md
-last_updated: "2026-03-14T20:24:15.280Z"
+stopped_at: Completed 03-03-PLAN.md
+last_updated: "2026-03-14T20:24:27.263Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
@@ -63,6 +63,8 @@ Progress: [██░░░░░░░░] 40%
 | Phase 03-activities-and-gamification P02 | 4 | 2 tasks | 11 files |
 | Phase 03-activities-and-gamification P01 | 2 | 2 tasks | 3 files |
 | Phase 03-activities-and-gamification P04 | 4 | 2 tasks | 4 files |
+| Phase 03-activities-and-gamification P05 | 2 | 2 tasks | 3 files |
+| Phase 03-activities-and-gamification P03 | 2 | 3 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -108,6 +110,9 @@ Recent decisions affecting current work:
 - [Phase 03-activities-and-gamification]: vitest.config.ts updated with @/ path alias so tests can import from @/lib/activities
 - [Phase 03-activities-and-gamification]: ignoreDuplicates upsert + count:exact used to detect new vs duplicate activity completion rows
 - [Phase 03-activities-and-gamification]: All-complete bonus idempotency: bonusAwarded only fires when isNewCompletion=true, preventing double-award on repeat calls
+- [Phase 03-activities-and-gamification]: FEEDBACK_MODEL constant defined at top of route handler for easy model swap; model 'claude-haiku-3-5' used per plan (low confidence)
+- [Phase 03-activities-and-gamification]: generateFillBlank unit tests implemented as real vitest assertions since they test a pure function with no DOM dependency
+- [Phase 03-activities-and-gamification]: Activity component DOM behavior tests kept as it.todo() — vitest configured with environment:node, not jsdom; E2E via Playwright covers interactive behavior
 
 ### Pending Todos
 
@@ -120,6 +125,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T20:24:01.486Z
-Stopped at: Completed 03-04-PLAN.md
+Last session: 2026-03-14T20:24:27.259Z
+Stopped at: Completed 03-03-PLAN.md
 Resume file: None
