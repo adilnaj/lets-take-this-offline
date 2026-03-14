@@ -55,7 +55,7 @@
 - [ ] **PLAT-02**: Today's word is available offline via service worker cache
 - [x] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
 - [x] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
-- [ ] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
+- [x] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
 
 ## v2 Requirements
 
@@ -127,7 +127,7 @@
 | PLAT-02 | Phase 4 | Pending |
 | PLAT-03 | Phase 2 | Complete |
 | PLAT-04 | Phase 2 | Complete |
-| PLAT-05 | Phase 2 | Pending |
+| PLAT-05 | Phase 2 | Complete |
 
 **Coverage:**
 - v1 requirements: 31 total

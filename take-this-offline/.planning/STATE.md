@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-03-PLAN.md — archive page with search, category filters, and pagination
-last_updated: "2026-03-14T17:38:06.992Z"
+stopped_at: Completed 02-04-PLAN.md — dynamic OG image route at /api/og/[slug]
+last_updated: "2026-03-14T17:41:50.454Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 9
-  completed_plans: 8
+  completed_plans: 9
   percent: 40
 ---
 
@@ -59,6 +59,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 02-daily-word-experience P01 | 5 | 2 tasks | 4 files |
 | Phase 02-daily-word-experience P02 | 2 | 2 tasks | 7 files |
 | Phase 02-daily-word-experience P03 | 2 | 2 tasks | 4 files |
+| Phase 02-daily-word-experience P04 | 5 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -95,6 +96,7 @@ Recent decisions affecting current work:
 - [Phase 02-daily-word-experience]: formatDate uses Date.UTC to avoid local timezone shifting YYYY-MM-DD date strings in WordCard
 - [Phase 02-daily-word-experience]: URL searchParams as filter state: all filters in URL so results are shareable and server-rendered without client state
 - [Phase 02-daily-word-experience]: hasFilters branch: calls searchArchive when any filter active, getArchive for plain pagination
+- [Phase 02-daily-word-experience]: next/og bundled in App Router — export const runtime = 'edge' required for ImageResponse
 
 ### Pending Todos
 
@@ -107,6 +109,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T17:38:06.989Z
-Stopped at: Completed 02-03-PLAN.md — archive page with search, category filters, and pagination
+Last session: 2026-03-14T17:41:50.451Z
+Stopped at: Completed 02-04-PLAN.md — dynamic OG image route at /api/og/[slug]
 Resume file: None
