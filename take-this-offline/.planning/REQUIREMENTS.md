@@ -7,8 +7,8 @@
 
 ### Content
 
-- [ ] **CONT-01**: User can view today's word page with header, executive summary, where/how used, and usage examples
-- [ ] **CONT-02**: User can view "Heard in the Wild" section with paraphrased citation and source link
+- [x] **CONT-01**: User can view today's word page with header, executive summary, where/how used, and usage examples
+- [x] **CONT-02**: User can view "Heard in the Wild" section with paraphrased citation and source link
 - [ ] **CONT-03**: User can browse the word archive (paginated list of all past words)
 - [ ] **CONT-04**: User can search the archive by keyword
 - [ ] **CONT-05**: User can filter the archive by category and date
@@ -54,7 +54,7 @@
 - [ ] **PLAT-01**: App is installable as a PWA with home screen icon
 - [ ] **PLAT-02**: Today's word is available offline via service worker cache
 - [x] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
-- [ ] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
+- [x] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
 - [ ] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
 
 ## v2 Requirements
@@ -97,8 +97,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Pending |
 | CONT-04 | Phase 2 | Pending |
 | CONT-05 | Phase 2 | Pending |
@@ -126,7 +126,7 @@
 | PLAT-01 | Phase 4 | Pending |
 | PLAT-02 | Phase 4 | Pending |
 | PLAT-03 | Phase 2 | Complete |
-| PLAT-04 | Phase 2 | Pending |
+| PLAT-04 | Phase 2 | Complete |
 | PLAT-05 | Phase 2 | Pending |
 
 **Coverage:**

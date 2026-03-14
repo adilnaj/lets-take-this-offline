@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-01-PLAN.md — data layer and dark mode
-last_updated: "2026-03-14T17:31:09.562Z"
+stopped_at: Completed 02-02-PLAN.md — today's word home page and word permalink
+last_updated: "2026-03-14T17:34:56.104Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 1
   total_plans: 9
-  completed_plans: 6
+  completed_plans: 7
   percent: 40
 ---
 
@@ -57,6 +57,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 01-foundation P05 | 2 | 1 tasks | 4 files |
 | Phase 01-foundation P05 | 10 | 2 tasks | 11 files |
 | Phase 02-daily-word-experience P01 | 5 | 2 tasks | 4 files |
+| Phase 02-daily-word-experience P02 | 2 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -89,6 +90,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: export const dynamic = 'force-dynamic' required on auth-dependent pages to prevent Next.js prerender errors
 - [Phase 02-daily-word-experience]: Providers component extracts ThemeProvider into dedicated client component — layout stays a server component
 - [Phase 02-daily-word-experience]: Word query pattern: import from @/lib/words — pages never import directly from database.types.ts
+- [Phase 02-daily-word-experience]: params in Next.js 15 App Router dynamic pages is a Promise — must be awaited before accessing slug
+- [Phase 02-daily-word-experience]: formatDate uses Date.UTC to avoid local timezone shifting YYYY-MM-DD date strings in WordCard
 
 ### Pending Todos
 
@@ -101,6 +104,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T17:31:09.560Z
-Stopped at: Completed 02-01-PLAN.md — data layer and dark mode
+Last session: 2026-03-14T17:34:56.093Z
+Stopped at: Completed 02-02-PLAN.md — today's word home page and word permalink
 Resume file: None
