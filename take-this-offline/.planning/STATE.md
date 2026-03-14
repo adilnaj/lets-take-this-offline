@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-03-14T20:20:15.058Z"
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-14T20:20:38.316Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
@@ -61,6 +61,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 02-daily-word-experience P03 | 2 | 2 tasks | 4 files |
 | Phase 02-daily-word-experience P04 | 5 | 1 tasks | 1 files |
 | Phase 03-activities-and-gamification P02 | 4 | 2 tasks | 11 files |
+| Phase 03-activities-and-gamification P01 | 2 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -100,6 +101,9 @@ Recent decisions affecting current work:
 - [Phase 02-daily-word-experience]: next/og bundled in App Router — export const runtime = 'edge' required for ImageResponse
 - [Phase 03-activities-and-gamification]: Test stubs use only it.todo() / test.todo() with no implementation imports — downstream implementation plans turn stubs green
 - [Phase 03-activities-and-gamification]: Playwright stubs placed in tests/profile/ for domain co-location, not a generic tests/e2e/ directory
+- [Phase 03-activities-and-gamification]: UNIQUE constraint on user_activity prevents double-awarding points atomically at DB level
+- [Phase 03-activities-and-gamification]: getDisstractors and computeStreak accept SupabaseClient param for route handler reuse
+- [Phase 03-activities-and-gamification]: Streak calculation uses UTC dates consistently with rest of schema; timezone-aware streaks deferred to v2
 
 ### Pending Todos
 
@@ -112,6 +116,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T20:20:15.056Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-03-14T20:20:38.313Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None
