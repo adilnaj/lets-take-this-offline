@@ -30,7 +30,7 @@ export default async function HomePage() {
   if (!word) {
     return (
       <main>
-        <SiteHeader />
+        <SiteHeader user={user} />
         <div className="container max-w-2xl mx-auto py-12 px-4">
           <p className="text-muted-foreground">No word scheduled for today. Check back tomorrow.</p>
         </div>
@@ -44,7 +44,7 @@ export default async function HomePage() {
 
   return (
     <main>
-      <SiteHeader />
+      <SiteHeader user={user} />
       <div className="container max-w-2xl mx-auto py-12 px-4 space-y-8">
         <WordCard word={word} />
         <PracticeSection
