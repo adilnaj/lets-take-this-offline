@@ -23,8 +23,8 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  // CRITICAL: use getClaims() not getSession() — getClaims() validates JWT signature server-side
-  await supabase.auth.getClaims()
+  // Refresh session — getUser() validates JWT server-side (not getSession which is client-only)
+  await supabase.auth.getUser()
 
   return supabaseResponse
 }
