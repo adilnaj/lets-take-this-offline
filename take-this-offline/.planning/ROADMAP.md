@@ -89,7 +89,16 @@ Plans:
   3. A user can unsubscribe from either notification channel and stop receiving messages
   4. A user on a supported mobile browser can install the app to their home screen via the PWA install prompt
   5. After visiting once, a user can load today's word page with no network connection
-**Plans**: TBD
+**Plans**: 7 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Notifications DB schema migration (push_subscriptions + email_digest_prefs tables + RLS) and TypeScript types
+- [ ] 04-02-PLAN.md — PWA manifest, icon assets, and layout.tsx manifest link + viewport meta
+- [ ] 04-03-PLAN.md — Push subscribe/unsubscribe API routes, hourly cron handler, web-push VAPID integration, vercel.json cron schedule
+- [ ] 04-04-PLAN.md — Email subscribe/unsubscribe API routes, Resend digest template, daily cron handler, vercel.json cron schedule
+- [ ] 04-05-PLAN.md — Service worker (cache-first offline), usePWAInstall hook, install button in SiteHeader, PwaRegister in Providers
+- [ ] 04-06-PLAN.md — Notifications section in /profile: push toggle + hour picker + email toggle wired to API routes
+- [ ] 04-07-PLAN.md — Human verification checkpoint for all five phase success criteria
 
 ### Phase 5: AI Pipeline
 **Goal**: The app generates a new, non-duplicate word every day automatically with no manual intervention
@@ -113,7 +122,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 1. Foundation | 5/5 | Complete   | 2026-03-14 |
 | 2. Daily Word Experience | 2/4 | In Progress|  |
 | 3. Activities and Gamification | 7/7 | Complete   | 2026-03-14 |
-| 4. Notifications and PWA | 0/TBD | Not started | - |
+| 4. Notifications and PWA | 0/7 | Not started | - |
 | 5. AI Pipeline | 0/TBD | Not started | - |
 
 ---
