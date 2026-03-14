@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-05-PLAN.md — Phase 1 Foundation complete
-last_updated: "2026-03-14T16:34:48.468Z"
+stopped_at: Completed 02-01-PLAN.md — data layer and dark mode
+last_updated: "2026-03-14T17:31:09.562Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 9
+  completed_plans: 6
   percent: 40
 ---
 
@@ -56,6 +56,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 01-foundation P04 | 1 | 1 tasks | 2 files |
 | Phase 01-foundation P05 | 2 | 1 tasks | 4 files |
 | Phase 01-foundation P05 | 10 | 2 tasks | 11 files |
+| Phase 02-daily-word-experience P01 | 5 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -86,6 +87,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: NEXT_PUBLIC_SUPABASE_ANON_KEY used instead of PUBLISHABLE_KEY — matches Vercel-Supabase integration default injection
 - [Phase 01-foundation]: getUser() used in middleware (not getClaims()) — correct Supabase SSR API for server-side session validation
 - [Phase 01-foundation]: export const dynamic = 'force-dynamic' required on auth-dependent pages to prevent Next.js prerender errors
+- [Phase 02-daily-word-experience]: Providers component extracts ThemeProvider into dedicated client component — layout stays a server component
+- [Phase 02-daily-word-experience]: Word query pattern: import from @/lib/words — pages never import directly from database.types.ts
 
 ### Pending Todos
 
@@ -98,6 +101,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T15:38:39.122Z
-Stopped at: Completed 01-05-PLAN.md — Phase 1 Foundation complete
+Last session: 2026-03-14T17:31:09.560Z
+Stopped at: Completed 02-01-PLAN.md — data layer and dark mode
 Resume file: None

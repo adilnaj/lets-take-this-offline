@@ -53,7 +53,7 @@
 
 - [ ] **PLAT-01**: App is installable as a PWA with home screen icon
 - [ ] **PLAT-02**: Today's word is available offline via service worker cache
-- [ ] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
+- [x] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
 - [ ] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
 - [ ] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
 
@@ -125,7 +125,7 @@
 | PIPE-03 | Phase 1 | Complete |
 | PLAT-01 | Phase 4 | Pending |
 | PLAT-02 | Phase 4 | Pending |
-| PLAT-03 | Phase 2 | Pending |
+| PLAT-03 | Phase 2 | Complete |
 | PLAT-04 | Phase 2 | Pending |
 | PLAT-05 | Phase 2 | Pending |
 
