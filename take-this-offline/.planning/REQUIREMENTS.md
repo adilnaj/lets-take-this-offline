@@ -15,11 +15,11 @@
 
 ### Activities
 
-- [ ] **ACTV-01**: User can flip a flashcard to reveal/hide the definition
-- [ ] **ACTV-02**: User can complete a fill-in-the-blank activity for the day's word
-- [ ] **ACTV-03**: User can submit a sentence using the day's word and receive AI feedback (login required, rate-limited)
-- [ ] **ACTV-04**: User can complete a context match activity
-- [ ] **ACTV-05**: User sees a "completed today" state after finishing all activities
+- [x] **ACTV-01**: User can flip a flashcard to reveal/hide the definition
+- [x] **ACTV-02**: User can complete a fill-in-the-blank activity for the day's word
+- [x] **ACTV-03**: User can submit a sentence using the day's word and receive AI feedback (login required, rate-limited)
+- [x] **ACTV-04**: User can complete a context match activity
+- [x] **ACTV-05**: User sees a "completed today" state after finishing all activities
 
 ### Auth
 
@@ -30,12 +30,12 @@
 
 ### Gamification
 
-- [ ] **GAME-01**: User earns points for each activity completed
-- [ ] **GAME-02**: User earns a daily badge after completing all activities
-- [ ] **GAME-03**: User can view their current streak counter
-- [ ] **GAME-04**: User can save words to favorites (login required)
-- [ ] **GAME-05**: User can view activity history across past words (login required)
-- [ ] **GAME-06**: User can see a mastery rating (mastered / learning / seen) per word (login required)
+- [x] **GAME-01**: User earns points for each activity completed
+- [x] **GAME-02**: User earns a daily badge after completing all activities
+- [x] **GAME-03**: User can view their current streak counter
+- [x] **GAME-04**: User can save words to favorites (login required)
+- [x] **GAME-05**: User can view activity history across past words (login required)
+- [x] **GAME-06**: User can see a mastery rating (mastered / learning / seen) per word (login required)
 
 ### Notifications
 
@@ -102,21 +102,21 @@
 | CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 2 | Complete |
 | CONT-05 | Phase 2 | Complete |
-| ACTV-01 | Phase 3 | Pending |
-| ACTV-02 | Phase 3 | Pending |
-| ACTV-03 | Phase 3 | Pending |
-| ACTV-04 | Phase 3 | Pending |
-| ACTV-05 | Phase 3 | Pending |
+| ACTV-01 | Phase 3 | Complete |
+| ACTV-02 | Phase 3 | Complete |
+| ACTV-03 | Phase 3 | Complete |
+| ACTV-04 | Phase 3 | Complete |
+| ACTV-05 | Phase 3 | Complete |
 | AUTH-01 | Phase 1 | Complete |
 | AUTH-02 | Phase 1 | Complete |
 | AUTH-03 | Phase 1 | Complete |
 | AUTH-04 | Phase 1 | Complete |
-| GAME-01 | Phase 3 | Pending |
-| GAME-02 | Phase 3 | Pending |
-| GAME-03 | Phase 3 | Pending |
-| GAME-04 | Phase 3 | Pending |
-| GAME-05 | Phase 3 | Pending |
-| GAME-06 | Phase 3 | Pending |
+| GAME-01 | Phase 3 | Complete |
+| GAME-02 | Phase 3 | Complete |
+| GAME-03 | Phase 3 | Complete |
+| GAME-04 | Phase 3 | Complete |
+| GAME-05 | Phase 3 | Complete |
+| GAME-06 | Phase 3 | Complete |
 | NOTF-01 | Phase 4 | Pending |
 | NOTF-02 | Phase 4 | Pending |
 | NOTF-03 | Phase 4 | Pending |

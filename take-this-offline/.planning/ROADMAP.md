@@ -68,7 +68,16 @@ Plans:
   3. A logged-in user can see points awarded per activity and a daily badge displayed after completing all activities
   4. A logged-in user can see their current streak counter and it increments correctly on consecutive daily completions
   5. A logged-in user can save and unsave words to favorites and view their activity history across past words with mastery ratings (mastered / learning / seen) per word
-**Plans**: TBD
+**Plans**: 7 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Gamification DB schema migration (4 new tables + RLS), extended TypeScript types, and src/lib/activities.ts helpers
+- [ ] 03-02-PLAN.md — Wave 0 test stubs: 9 Vitest unit stubs + 2 Playwright E2E stubs for all 11 requirements
+- [ ] 03-03-PLAN.md — Three anonymous-accessible activity components: FlashcardActivity, FillBlankActivity, ContextMatchActivity
+- [ ] 03-04-PLAN.md — Route handlers: POST /api/activity/complete (points + streak + mastery) and POST /api/favorites (toggle)
+- [ ] 03-05-PLAN.md — SentenceActivity component (auth gate + inline feedback) and POST /api/sentence-feedback (Anthropic SDK)
+- [ ] 03-06-PLAN.md — PracticeSection orchestrator, StreakCounter, CompletionBanner, and home page wiring
+- [ ] 03-07-PLAN.md — /profile page, FavoriteButton, SiteHeader /profile link, word page FavoriteButton, human verification checkpoint
 
 ### Phase 4: Notifications and PWA
 **Goal**: Users can subscribe to reminders that bring them back daily and install the app to their home screen with offline support for today's word
@@ -103,7 +112,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-14 |
 | 2. Daily Word Experience | 2/4 | In Progress|  |
-| 3. Activities and Gamification | 0/TBD | Not started | - |
+| 3. Activities and Gamification | 2/7 | In Progress|  |
 | 4. Notifications and PWA | 0/TBD | Not started | - |
 | 5. AI Pipeline | 0/TBD | Not started | - |
 
