@@ -3,14 +3,10 @@ import { Geist } from "next/font/google";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 
-const defaultUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
+  title: "Let's Take This Offline",
+  description: "Two minutes a day to actually understand the business and tech jargon you've been nodding along to.",
 };
 
 const geistSans = Geist({
