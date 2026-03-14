@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-06-PLAN.md
-last_updated: "2026-03-14T20:28:58.901Z"
+stopped_at: Completed 03-07-PLAN.md — awaiting human verification checkpoint
+last_updated: "2026-03-14T20:32:47.928Z"
 last_activity: 2026-03-13 — Plan 01-02 complete (database schema + TypeScript types)
 progress:
   total_phases: 5
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 16
-  completed_plans: 15
+  completed_plans: 16
   percent: 40
 ---
 
@@ -66,6 +66,7 @@ Progress: [██░░░░░░░░] 40%
 | Phase 03-activities-and-gamification P05 | 2 | 2 tasks | 3 files |
 | Phase 03-activities-and-gamification P03 | 2 | 3 tasks | 4 files |
 | Phase 03-activities-and-gamification P06 | 2 | 2 tasks | 5 files |
+| Phase 03-activities-and-gamification P07 | 5 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -116,6 +117,8 @@ Recent decisions affecting current work:
 - [Phase 03-activities-and-gamification]: Activity component DOM behavior tests kept as it.todo() — vitest configured with environment:node, not jsdom; E2E via Playwright covers interactive behavior
 - [Phase 03-activities-and-gamification]: Home page remains a server component — createClient() and auth.getUser() called in page.tsx, PracticeSection receives pre-fetched data as props
 - [Phase 03-activities-and-gamification]: Anonymous users track activity completions locally via useState Set (no API call) — no auth required for activity UI, no 401 risk
+- [Phase 03-activities-and-gamification]: SiteHeader user prop is optional — existing callers without prop remain type-safe
+- [Phase 03-activities-and-gamification]: Supabase join cast pattern: use 'as unknown as Shape' for many-to-one joins to satisfy strict TypeScript
 
 ### Pending Todos
 
@@ -128,6 +131,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T20:28:58.899Z
-Stopped at: Completed 03-06-PLAN.md
+Last session: 2026-03-14T20:32:47.926Z
+Stopped at: Completed 03-07-PLAN.md — awaiting human verification checkpoint
 Resume file: None
