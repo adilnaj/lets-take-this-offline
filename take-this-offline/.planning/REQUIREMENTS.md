@@ -33,9 +33,9 @@
 - [x] **GAME-01**: User earns points for each activity completed
 - [x] **GAME-02**: User earns a daily badge after completing all activities
 - [x] **GAME-03**: User can view their current streak counter
-- [ ] **GAME-04**: User can save words to favorites (login required)
-- [ ] **GAME-05**: User can view activity history across past words (login required)
-- [ ] **GAME-06**: User can see a mastery rating (mastered / learning / seen) per word (login required)
+- [x] **GAME-04**: User can save words to favorites (login required)
+- [x] **GAME-05**: User can view activity history across past words (login required)
+- [x] **GAME-06**: User can see a mastery rating (mastered / learning / seen) per word (login required)
 
 ### Notifications
 
@@ -114,9 +114,9 @@
 | GAME-01 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 | GAME-02 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 | GAME-03 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
-| GAME-04 | Phase 3 → Phase 7 (verify) | Pending |
-| GAME-05 | Phase 3 → Phase 7 (verify) | Pending |
-| GAME-06 | Phase 3 → Phase 7 (verify) | Pending |
+| GAME-04 | Phase 3 → Phase 7 (verify) | Complete |
+| GAME-05 | Phase 3 → Phase 7 (verify) | Complete |
+| GAME-06 | Phase 3 → Phase 7 (verify) | Complete |
 | NOTF-01 | Phase 4 | Complete |
 | NOTF-02 | Phase 4 | Complete |
 | NOTF-03 | Phase 4 | Complete |
