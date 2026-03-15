@@ -1,13 +1,8 @@
 {
   "framework": "nextjs",
   "crons": [
-    {
-      "path": "/api/cron/push-dispatch",
-      "schedule": "0 * * * *"
-    },
-    {
-      "path": "/api/cron/email-digest",
-      "schedule": "0 8 * * *"
-    }
+    { "path": "/api/cron/push-dispatch",  "schedule": "0 * * * *" },
+    { "path": "/api/cron/email-digest",   "schedule": "0 8 * * *" },
+    { "path": "/api/cron/generate-word",  "schedule": "0 2 * * *" }
   ]
 }
