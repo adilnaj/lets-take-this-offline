@@ -139,11 +139,12 @@ Plans:
   1. Phase 02 has a VERIFICATION.md with all 8 requirements confirmed satisfied
   2. Phase 03 has a VERIFICATION.md with all 11 requirements confirmed satisfied
   3. The Archive → Past Word → Practice E2E flow is verified end-to-end
-**Plans:** 2/2 plans complete
+**Plans:** 3 plans (2 verification + 1 gap closure)
 
 Plans:
 - [ ] 07-01-PLAN.md — Code-inspect Phase 02 files (page.tsx, archive, word-card, OG route, theme) and produce 07-phase02-VERIFICATION.md for CONT-01 to CONT-05 and PLAT-03 to PLAT-05
 - [ ] 07-02-PLAN.md — Code-inspect Phase 03 files (activities, profile, gamification migration, API routes) and produce 07-phase03-VERIFICATION.md for ACTV-01 to ACTV-05 and GAME-01 to GAME-06
+- [ ] 07-03-PLAN.md — Gap closure: add per-user daily rate limiting to /api/sentence-feedback (ACTV-03)
 
 ### Phase 8: Resolve Tech Debt
 **Goal:** All tech debt items from the v1.0 audit are resolved — AUTH-03 status is accurate, database types are complete, and test suite exits 0
@@ -175,7 +176,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 4. Notifications and PWA | 2/7 | In Progress|  |
 | 5. AI Pipeline | 2/2 | Complete   | 2026-03-15 |
 | 6. Fix Critical Bugs | 3/3 | Complete   | 2026-03-15 |
-| 7. Verify Phases 02 and 03 | 2/2 | Complete   | 2026-03-15 |
+| 7. Verify Phases 02 and 03 | 2/3 | In Progress|  |
 | 8. Resolve Tech Debt | 0/3 | Pending    |  |
 
 ---
