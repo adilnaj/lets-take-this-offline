@@ -17,7 +17,7 @@
 
 - [ ] **ACTV-01**: User can flip a flashcard to reveal/hide the definition
 - [ ] **ACTV-02**: User can complete a fill-in-the-blank activity for the day's word
-- [ ] **ACTV-03**: User can submit a sentence using the day's word and receive AI feedback (login required, rate-limited)
+- [x] **ACTV-03**: User can submit a sentence using the day's word and receive AI feedback (login required, rate-limited)
 - [ ] **ACTV-04**: User can complete a context match activity
 - [ ] **ACTV-05**: User sees a "completed today" state after finishing all activities
 
@@ -55,7 +55,7 @@
 - [x] **PLAT-02**: Today's word is available offline via service worker cache
 - [ ] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
 - [ ] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
-- [ ] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
+- [x] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
 
 ## v2 Requirements
 
@@ -104,7 +104,7 @@
 | CONT-05 | Phase 2 → Phase 7 (verify) | Pending |
 | ACTV-01 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
 | ACTV-02 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
-| ACTV-03 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
+| ACTV-03 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 | ACTV-04 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
 | ACTV-05 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
 | AUTH-01 | Phase 1 | Complete |
@@ -127,7 +127,7 @@
 | PLAT-02 | Phase 4 | Complete |
 | PLAT-03 | Phase 2 → Phase 7 (verify) | Pending |
 | PLAT-04 | Phase 2 → Phase 7 (verify) | Pending |
-| PLAT-05 | Phase 2 → Phase 6 (fix) + Phase 7 (verify) | Pending |
+| PLAT-05 | Phase 2 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 
 **Coverage:**
 - v1 requirements: 31 total

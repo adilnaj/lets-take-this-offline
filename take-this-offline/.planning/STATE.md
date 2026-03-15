@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 05-02-PLAN.md (generate-word cron route)
-last_updated: "2026-03-15T04:08:39.375Z"
+stopped_at: Completed 06-01-PLAN.md (fix OG runtime + sentence-feedback model ID)
+last_updated: "2026-03-15T17:21:11.555Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
-  total_phases: 5
+  total_phases: 8
   completed_phases: 5
-  total_plans: 25
-  completed_plans: 25
+  total_plans: 28
+  completed_plans: 26
   percent: 44
 ---
 
@@ -71,6 +71,7 @@ Progress: [████░░░░░░] 44%
 | Phase 04-notifications-and-pwa P02 | 2 | 2 tasks | 5 files |
 | Phase 05-ai-pipeline P01 | 2 | 2 tasks | 3 files |
 | Phase 05-ai-pipeline P02 | 2 | 2 tasks | 2 files |
+| Phase 06-fix-critical-bugs P01 | 1 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -133,6 +134,8 @@ Recent decisions affecting current work:
 - [Phase 05-ai-pipeline]: checkDuplicate returns false on RPC error — safe default avoids blocking inserts on DB issues
 - [Phase 05-ai-pipeline]: generate-word fires at 02:00 UTC — 6 hours before email-digest ensuring word exists before digest sends
 - [Phase 05-ai-pipeline]: Idempotency check on daily_date before Claude/VoyageAI calls — zero-cost guard on repeat invocations
+- [Phase 06-fix-critical-bugs]: export const runtime = 'edge' placed between imports and GET export in OG route — required for next/og ImageResponse on Vercel Edge
+- [Phase 06-fix-critical-bugs]: FEEDBACK_MODEL corrected to claude-haiku-4-5-20251001 (was invalid 'claude-haiku-3-5')
 
 ### Pending Todos
 
@@ -145,6 +148,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T04:05:57.173Z
-Stopped at: Completed 05-02-PLAN.md (generate-word cron route)
+Last session: 2026-03-15T17:21:11.552Z
+Stopped at: Completed 06-01-PLAN.md (fix OG runtime + sentence-feedback model ID)
 Resume file: None
