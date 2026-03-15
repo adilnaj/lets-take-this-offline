@@ -1,5 +1,6 @@
 import { getArchive, searchArchive, WORD_CATEGORIES } from '@/lib/words'
 import type { WordCategory } from '@/lib/words'
+import { createClient } from '@/lib/supabase/server'
 import { SiteHeader } from '@/components/site-header'
 import { ArchiveList } from '@/components/archive-list'
 import { ArchiveFilters } from '@/components/archive-filters'
@@ -18,6 +19,9 @@ export default async function ArchivePage({
   const dateFrom = searchParams.from ?? ''
   const dateTo = searchParams.to ?? ''
 
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
   const hasFilters = keyword || category || dateFrom || dateTo
 
   const { words, total } = hasFilters
@@ -26,7 +30,7 @@ export default async function ArchivePage({
 
   return (
     <main>
-      <SiteHeader />
+      <SiteHeader user={user} />
       <div className="container max-w-3xl mx-auto py-12 px-4">
         <h1 className="text-2xl font-bold mb-6">Word Archive</h1>
         <ArchiveFilters
