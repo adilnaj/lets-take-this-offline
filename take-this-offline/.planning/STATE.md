@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 06-02-PLAN.md (wire PracticeSection into /word/[slug] page)
-last_updated: "2026-03-15T17:23:34.302Z"
+stopped_at: Completed 06-03-PLAN.md (archive page authenticated navigation)
+last_updated: "2026-03-15T17:25:28.429Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 8
-  completed_phases: 5
+  completed_phases: 6
   total_plans: 28
-  completed_plans: 27
+  completed_plans: 28
   percent: 44
 ---
 
@@ -73,6 +73,7 @@ Progress: [████░░░░░░] 44%
 | Phase 05-ai-pipeline P02 | 2 | 2 tasks | 2 files |
 | Phase 06-fix-critical-bugs P01 | 1 | 2 tasks | 2 files |
 | Phase 06-fix-critical-bugs P02 | 5 | 1 tasks | 1 files |
+| Phase 06-fix-critical-bugs P03 | 3 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -139,6 +140,7 @@ Recent decisions affecting current work:
 - [Phase 06-fix-critical-bugs]: FEEDBACK_MODEL corrected to claude-haiku-4-5-20251001 (was invalid 'claude-haiku-3-5')
 - [Phase 06-fix-critical-bugs]: getDisstractors called unconditionally (not gated on user) — anonymous users need distractors for context-match activity
 - [Phase 06-fix-critical-bugs]: Promise.all fetches completions, stats, distractors concurrently on /word/[slug] to minimise server latency
+- [Phase 06-fix-critical-bugs]: Archive page now calls createClient() + getUser() and passes user to SiteHeader — consistent navigation for logged-in users
 
 ### Pending Todos
 
@@ -151,6 +153,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T17:23:34.299Z
-Stopped at: Completed 06-02-PLAN.md (wire PracticeSection into /word/[slug] page)
+Last session: 2026-03-15T17:25:28.426Z
+Stopped at: Completed 06-03-PLAN.md (archive page authenticated navigation)
 Resume file: None
