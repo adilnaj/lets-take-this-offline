@@ -45,8 +45,8 @@
 
 ### AI Pipeline
 
-- [ ] **PIPE-01**: System generates a new word daily from trending news/Hacker News signals via Claude
-- [ ] **PIPE-02**: System deduplicates new words against existing words using vector embeddings (pgvector, cosine similarity)
+- [x] **PIPE-01**: System generates a new word daily from trending news/Hacker News signals via Claude
+- [x] **PIPE-02**: System deduplicates new words against existing words using vector embeddings (pgvector, cosine similarity)
 - [x] **PIPE-03**: System seeds the database with ~100 curated words before pipeline is live
 
 ### Platform
@@ -120,8 +120,8 @@
 | NOTF-01 | Phase 4 | Complete |
 | NOTF-02 | Phase 4 | Complete |
 | NOTF-03 | Phase 4 | Complete |
-| PIPE-01 | Phase 5 | Pending |
-| PIPE-02 | Phase 5 | Pending |
+| PIPE-01 | Phase 5 | Complete |
+| PIPE-02 | Phase 5 | Complete |
 | PIPE-03 | Phase 1 | Complete |
 | PLAT-01 | Phase 4 | Complete |
 | PLAT-02 | Phase 4 | Complete |

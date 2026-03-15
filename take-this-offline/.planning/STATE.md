@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 04-02-PLAN.md (PWA manifest and icons)
-last_updated: "2026-03-15T03:38:14.355Z"
+stopped_at: Completed 05-01-PLAN.md (pipeline helper library)
+last_updated: "2026-03-15T04:02:49.171Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 5
   completed_phases: 4
-  total_plans: 23
-  completed_plans: 23
+  total_plans: 25
+  completed_plans: 24
   percent: 44
 ---
 
@@ -69,6 +69,7 @@ Progress: [████░░░░░░] 44%
 | Phase 03-activities-and-gamification P07 | 5 | 2 tasks | 7 files |
 | Phase 04-notifications-and-pwa P01 | 3 | 2 tasks | 2 files |
 | Phase 04-notifications-and-pwa P02 | 2 | 2 tasks | 5 files |
+| Phase 05-ai-pipeline P01 | 2 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -126,6 +127,9 @@ Recent decisions affecting current work:
 - [Phase 04-notifications-and-pwa]: Notification types appended before words table in database.types.ts for alphabetical consistency (e, p before u, w)
 - [Phase 04-notifications-and-pwa]: Viewport export used for themeColor (Next.js 15 pattern) — metadata.themeColor is deprecated
 - [Phase 04-notifications-and-pwa]: Placeholder PNG icons generated via raw zlib/PNG bytes in scripts/gen-icons.mjs — no canvas or sharp dependency needed
+- [Phase 05-ai-pipeline]: DEDUP_THRESHOLD set to 0.15 cosine distance constant in pipeline.ts for easy tuning
+- [Phase 05-ai-pipeline]: fetchHNSignals accepts optional fetch param for testability without mocking globals
+- [Phase 05-ai-pipeline]: checkDuplicate returns false on RPC error — safe default avoids blocking inserts on DB issues
 
 ### Pending Todos
 
@@ -138,6 +142,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T21:18:37.277Z
-Stopped at: Completed 04-02-PLAN.md (PWA manifest and icons)
+Last session: 2026-03-15T04:02:49.168Z
+Stopped at: Completed 05-01-PLAN.md (pipeline helper library)
 Resume file: None

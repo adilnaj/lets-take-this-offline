@@ -127,7 +127,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 2. Daily Word Experience | 2/4 | In Progress|  |
 | 3. Activities and Gamification | 7/7 | Complete   | 2026-03-14 |
 | 4. Notifications and PWA | 2/7 | In Progress|  |
-| 5. AI Pipeline | 0/2 | Not started | - |
+| 5. AI Pipeline | 1/2 | In Progress|  |
 
 ---
 *Roadmap created: 2026-03-12 for milestone v1.0*
