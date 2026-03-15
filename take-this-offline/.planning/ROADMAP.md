@@ -139,10 +139,11 @@ Plans:
   1. Phase 02 has a VERIFICATION.md with all 8 requirements confirmed satisfied
   2. Phase 03 has a VERIFICATION.md with all 11 requirements confirmed satisfied
   3. The Archive → Past Word → Practice E2E flow is verified end-to-end
+**Plans:** 2 plans
 
 Plans:
-- [ ] 07-01-PLAN.md — `/gsd:validate-phase 2` — generate VERIFICATION.md for Phase 02 (daily-word-experience)
-- [ ] 07-02-PLAN.md — `/gsd:validate-phase 3` — generate VERIFICATION.md for Phase 03 (activities-and-gamification)
+- [ ] 07-01-PLAN.md — Code-inspect Phase 02 files (page.tsx, archive, word-card, OG route, theme) and produce 07-phase02-VERIFICATION.md for CONT-01 to CONT-05 and PLAT-03 to PLAT-05
+- [ ] 07-02-PLAN.md — Code-inspect Phase 03 files (activities, profile, gamification migration, API routes) and produce 07-phase03-VERIFICATION.md for ACTV-01 to ACTV-05 and GAME-01 to GAME-06
 
 ### Phase 8: Resolve Tech Debt
 **Goal:** All tech debt items from the v1.0 audit are resolved — AUTH-03 status is accurate, database types are complete, and test suite exits 0
