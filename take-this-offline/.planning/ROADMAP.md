@@ -114,12 +114,57 @@ Plans:
 - [ ] 05-01-PLAN.md — Wave 0 tests (9 unit assertions), match_similar_words SQL migration, and src/lib/pipeline.ts helpers (buildPrompt, fetchHNSignals, checkDuplicate)
 - [ ] 05-02-PLAN.md — /api/cron/generate-word route (full pipeline: auth + idempotency + HN signals + Claude structured output + VoyageAI embedding + dedup + insert) and vercel.json cron schedule
 
+### Phase 6: Fix Critical Bugs
+**Goal:** All integration gaps identified by the v1.0 audit are closed — OG images render in production, activities are accessible on every word page, and navigation is consistent for logged-in users
+**Depends on:** Phase 5
+**Requirements:** PLAT-05, ACTV-01, ACTV-02, ACTV-03, ACTV-04, ACTV-05, GAME-01, GAME-02, GAME-03
+**Gap Closure:** Closes gaps from v1.0 audit
+**Success Criteria** (what must be TRUE):
+  1. Sharing any word URL on Slack/LinkedIn/X renders a dynamic OG image (not an error)
+  2. A user navigating from /archive to a past word page can complete all 4 activities, earn points, and maintain their streak
+  3. A logged-in user on /archive sees the Profile nav link in SiteHeader
+  4. The sentence-feedback API calls a valid Anthropic model ID without error
+
+Plans:
+- [ ] 06-01-PLAN.md — Add `export const runtime = 'edge'` to OG route; fix sentence-feedback model ID
+- [ ] 06-02-PLAN.md — Mount PracticeSection on /word/[slug] (wire getCompletionsToday, getUserStats, getDisstractors)
+- [ ] 06-03-PLAN.md — Add getUser() to /archive page and pass user prop to SiteHeader
+
+### Phase 7: Verify Phases 02 and 03
+**Goal:** Phases 02 and 03 have VERIFICATION.md documents confirming all requirements are satisfied after Phase 6 fixes
+**Depends on:** Phase 6
+**Requirements:** CONT-01, CONT-02, CONT-03, CONT-04, CONT-05, PLAT-03, PLAT-04, PLAT-05, ACTV-01, ACTV-02, ACTV-03, ACTV-04, ACTV-05, GAME-01, GAME-02, GAME-03, GAME-04, GAME-05, GAME-06
+**Gap Closure:** Closes verification gaps from v1.0 audit (Phase 02 and 03 were UNVERIFIED blockers)
+**Success Criteria** (what must be TRUE):
+  1. Phase 02 has a VERIFICATION.md with all 8 requirements confirmed satisfied
+  2. Phase 03 has a VERIFICATION.md with all 11 requirements confirmed satisfied
+  3. The Archive → Past Word → Practice E2E flow is verified end-to-end
+
+Plans:
+- [ ] 07-01-PLAN.md — `/gsd:validate-phase 2` — generate VERIFICATION.md for Phase 02 (daily-word-experience)
+- [ ] 07-02-PLAN.md — `/gsd:validate-phase 3` — generate VERIFICATION.md for Phase 03 (activities-and-gamification)
+
+### Phase 8: Resolve Tech Debt
+**Goal:** All tech debt items from the v1.0 audit are resolved — AUTH-03 status is accurate, database types are complete, and test suite exits 0
+**Depends on:** Phase 7
+**Requirements:** AUTH-03
+**Gap Closure:** Closes tech debt items from v1.0 audit
+**Success Criteria** (what must be TRUE):
+  1. AUTH-03 is correctly marked `[ ]` in REQUIREMENTS.md with a formal deferral note (Apple OAuth code exists; provider config deferred to post-v1)
+  2. `database.types.ts` includes the `match_similar_words` RPC function signature
+  3. `npx vitest run` exits 0 (seed test stubs are implemented or properly skipped)
+
+Plans:
+- [ ] 08-01-PLAN.md — Correct AUTH-03 status in REQUIREMENTS.md; add deferral note to Phase 01 docs
+- [ ] 08-02-PLAN.md — Update database.types.ts to include match_similar_words Functions entry
+- [ ] 08-03-PLAN.md — Implement or vi.skip the 3 seed test stubs (seed.test.ts, embeddings.test.ts, uniqueness.test.ts)
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
-Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either order, but Phase 2 delivers visible content that makes Phase 3 testable in context.
+Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either order, but Phase 2 delivers visible content that makes Phase 3 testable in context. Phases 6–8 are gap-closure phases added after the v1.0 audit.
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -128,8 +173,12 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 3. Activities and Gamification | 7/7 | Complete   | 2026-03-14 |
 | 4. Notifications and PWA | 2/7 | In Progress|  |
 | 5. AI Pipeline | 2/2 | Complete   | 2026-03-15 |
+| 6. Fix Critical Bugs | 0/3 | Pending    |  |
+| 7. Verify Phases 02 and 03 | 0/2 | Pending    |  |
+| 8. Resolve Tech Debt | 0/3 | Pending    |  |
 
 ---
 *Roadmap created: 2026-03-12 for milestone v1.0*
-*Granularity: coarse (5 phases)*
+*Granularity: coarse (8 phases)*
 *Coverage: 31/31 v1 requirements mapped*
+*Gap closure phases (6–8) added: 2026-03-15 after v1.0 audit*
