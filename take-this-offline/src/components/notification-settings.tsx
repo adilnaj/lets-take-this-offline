@@ -67,11 +67,24 @@ export function NotificationSettings({
       return false
     }
 
-    const reg = await navigator.serviceWorker.ready
-    const sub = await reg.pushManager.subscribe({
-      userVisibleOnly: true,
-      applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
-    })
+    if (!process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY) {
+      setPushError('Push notifications are not configured yet. Add NEXT_PUBLIC_VAPID_PUBLIC_KEY to your environment.')
+      setPushEnabled(false)
+      return false
+    }
+
+    let sub: PushSubscription
+    try {
+      const reg = await navigator.serviceWorker.ready
+      sub = await reg.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
+      })
+    } catch {
+      setPushError('Failed to subscribe to push notifications. Check your VAPID configuration.')
+      setPushEnabled(false)
+      return false
+    }
 
     const auth = arrayBufferToBase64Url(sub.getKey('auth')!)
     const p256dh = arrayBufferToBase64Url(sub.getKey('p256dh')!)
