@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 06-01-PLAN.md (fix OG runtime + sentence-feedback model ID)
-last_updated: "2026-03-15T17:21:11.555Z"
+stopped_at: Completed 06-02-PLAN.md (wire PracticeSection into /word/[slug] page)
+last_updated: "2026-03-15T17:23:34.302Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 8
   completed_phases: 5
   total_plans: 28
-  completed_plans: 26
+  completed_plans: 27
   percent: 44
 ---
 
@@ -72,6 +72,7 @@ Progress: [████░░░░░░] 44%
 | Phase 05-ai-pipeline P01 | 2 | 2 tasks | 3 files |
 | Phase 05-ai-pipeline P02 | 2 | 2 tasks | 2 files |
 | Phase 06-fix-critical-bugs P01 | 1 | 2 tasks | 2 files |
+| Phase 06-fix-critical-bugs P02 | 5 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -136,6 +137,8 @@ Recent decisions affecting current work:
 - [Phase 05-ai-pipeline]: Idempotency check on daily_date before Claude/VoyageAI calls — zero-cost guard on repeat invocations
 - [Phase 06-fix-critical-bugs]: export const runtime = 'edge' placed between imports and GET export in OG route — required for next/og ImageResponse on Vercel Edge
 - [Phase 06-fix-critical-bugs]: FEEDBACK_MODEL corrected to claude-haiku-4-5-20251001 (was invalid 'claude-haiku-3-5')
+- [Phase 06-fix-critical-bugs]: getDisstractors called unconditionally (not gated on user) — anonymous users need distractors for context-match activity
+- [Phase 06-fix-critical-bugs]: Promise.all fetches completions, stats, distractors concurrently on /word/[slug] to minimise server latency
 
 ### Pending Todos
 
@@ -148,6 +151,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T17:21:11.552Z
-Stopped at: Completed 06-01-PLAN.md (fix OG runtime + sentence-feedback model ID)
+Last session: 2026-03-15T17:23:34.299Z
+Stopped at: Completed 06-02-PLAN.md (wire PracticeSection into /word/[slug] page)
 Resume file: None
