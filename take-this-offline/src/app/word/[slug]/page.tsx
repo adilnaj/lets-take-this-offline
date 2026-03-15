@@ -2,6 +2,8 @@ import { getWordBySlug } from '@/lib/words'
 import { WordCard } from '@/components/word-card'
 import { SiteHeader } from '@/components/site-header'
 import { FavoriteButton } from '@/components/favorite-button'
+import { PracticeSection } from '@/components/practice-section'
+import { getCompletionsToday, getUserStats, getDisstractors } from '@/lib/activities'
 import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 
@@ -42,6 +44,12 @@ export default async function WordPage({ params }: { params: Promise<{ slug: str
     initialFavorited = !!fav
   }
 
+  const [initialCompletions, initialStats, distractors] = await Promise.all([
+    user ? getCompletionsToday(user.id, word.id) : Promise.resolve([]),
+    user ? getUserStats(user.id) : Promise.resolve(null),
+    getDisstractors(word, supabase),
+  ])
+
   return (
     <main>
       <SiteHeader user={user} />
@@ -53,6 +61,15 @@ export default async function WordPage({ params }: { params: Promise<{ slug: str
           )}
         </div>
         <WordCard word={word} />
+        <div className="mt-8">
+          <PracticeSection
+            word={word}
+            user={user}
+            initialCompletions={initialCompletions}
+            initialStats={initialStats}
+            distractors={distractors}
+          />
+        </div>
       </div>
     </main>
   )
