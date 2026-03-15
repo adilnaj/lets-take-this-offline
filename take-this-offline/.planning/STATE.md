@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 05-01-PLAN.md (pipeline helper library)
-last_updated: "2026-03-15T04:02:49.171Z"
+stopped_at: Completed 05-02-PLAN.md (generate-word cron route)
+last_updated: "2026-03-15T04:05:57.175Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 5
-  completed_phases: 4
+  completed_phases: 5
   total_plans: 25
-  completed_plans: 24
+  completed_plans: 25
   percent: 44
 ---
 
@@ -70,6 +70,7 @@ Progress: [████░░░░░░] 44%
 | Phase 04-notifications-and-pwa P01 | 3 | 2 tasks | 2 files |
 | Phase 04-notifications-and-pwa P02 | 2 | 2 tasks | 5 files |
 | Phase 05-ai-pipeline P01 | 2 | 2 tasks | 3 files |
+| Phase 05-ai-pipeline P02 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -130,6 +131,8 @@ Recent decisions affecting current work:
 - [Phase 05-ai-pipeline]: DEDUP_THRESHOLD set to 0.15 cosine distance constant in pipeline.ts for easy tuning
 - [Phase 05-ai-pipeline]: fetchHNSignals accepts optional fetch param for testability without mocking globals
 - [Phase 05-ai-pipeline]: checkDuplicate returns false on RPC error — safe default avoids blocking inserts on DB issues
+- [Phase 05-ai-pipeline]: generate-word fires at 02:00 UTC — 6 hours before email-digest ensuring word exists before digest sends
+- [Phase 05-ai-pipeline]: Idempotency check on daily_date before Claude/VoyageAI calls — zero-cost guard on repeat invocations
 
 ### Pending Todos
 
@@ -142,6 +145,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-15T04:02:49.168Z
-Stopped at: Completed 05-01-PLAN.md (pipeline helper library)
+Last session: 2026-03-15T04:05:57.173Z
+Stopped at: Completed 05-02-PLAN.md (generate-word cron route)
 Resume file: None

@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 2: Daily Word Experience** - Core content pages, archive, SEO, OG images, and dark mode
 - [x] **Phase 3: Activities and Gamification** - Interactive memorization loop with points, streaks, favorites, and mastery (completed 2026-03-14)
 - [ ] **Phase 4: Notifications and PWA** - Web push, email digest, offline support, and home screen install
-- [ ] **Phase 5: AI Pipeline** - Automated daily word generation with vector deduplication
+- [x] **Phase 5: AI Pipeline** - Automated daily word generation with vector deduplication (completed 2026-03-15)
 
 ## Phase Details
 
@@ -127,7 +127,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 2. Daily Word Experience | 2/4 | In Progress|  |
 | 3. Activities and Gamification | 7/7 | Complete   | 2026-03-14 |
 | 4. Notifications and PWA | 2/7 | In Progress|  |
-| 5. AI Pipeline | 1/2 | In Progress|  |
+| 5. AI Pipeline | 2/2 | Complete   | 2026-03-15 |
 
 ---
 *Roadmap created: 2026-03-12 for milestone v1.0*
