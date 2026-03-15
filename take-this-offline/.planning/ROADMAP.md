@@ -108,7 +108,11 @@ Plans:
   1. A new word is inserted into the database each day via a secured Vercel Cron job that fetches trending signals and calls Claude
   2. Words that are semantically too similar to existing words (cosine similarity above threshold) are rejected before insertion, preventing near-duplicate content from appearing
   3. The cron job is idempotent — running it twice in one day does not insert duplicate words
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Wave 0 tests (9 unit assertions), match_similar_words SQL migration, and src/lib/pipeline.ts helpers (buildPrompt, fetchHNSignals, checkDuplicate)
+- [ ] 05-02-PLAN.md — /api/cron/generate-word route (full pipeline: auth + idempotency + HN signals + Claude structured output + VoyageAI embedding + dedup + insert) and vercel.json cron schedule
 
 ## Progress
 
@@ -123,7 +127,7 @@ Note: Phases 2 and 3 both depend on Phase 1 only and can be sequenced in either 
 | 2. Daily Word Experience | 2/4 | In Progress|  |
 | 3. Activities and Gamification | 7/7 | Complete   | 2026-03-14 |
 | 4. Notifications and PWA | 2/7 | In Progress|  |
-| 5. AI Pipeline | 0/TBD | Not started | - |
+| 5. AI Pipeline | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-03-12 for milestone v1.0*
