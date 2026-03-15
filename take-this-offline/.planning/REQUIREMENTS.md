@@ -7,19 +7,19 @@
 
 ### Content
 
-- [ ] **CONT-01**: User can view today's word page with header, executive summary, where/how used, and usage examples
-- [ ] **CONT-02**: User can view "Heard in the Wild" section with paraphrased citation and source link
-- [ ] **CONT-03**: User can browse the word archive (paginated list of all past words)
-- [ ] **CONT-04**: User can search the archive by keyword
-- [ ] **CONT-05**: User can filter the archive by category and date
+- [x] **CONT-01**: User can view today's word page with header, executive summary, where/how used, and usage examples
+- [x] **CONT-02**: User can view "Heard in the Wild" section with paraphrased citation and source link
+- [x] **CONT-03**: User can browse the word archive (paginated list of all past words)
+- [x] **CONT-04**: User can search the archive by keyword
+- [x] **CONT-05**: User can filter the archive by category and date
 
 ### Activities
 
-- [ ] **ACTV-01**: User can flip a flashcard to reveal/hide the definition
-- [ ] **ACTV-02**: User can complete a fill-in-the-blank activity for the day's word
+- [x] **ACTV-01**: User can flip a flashcard to reveal/hide the definition
+- [x] **ACTV-02**: User can complete a fill-in-the-blank activity for the day's word
 - [x] **ACTV-03**: User can submit a sentence using the day's word and receive AI feedback (login required, rate-limited)
-- [ ] **ACTV-04**: User can complete a context match activity
-- [ ] **ACTV-05**: User sees a "completed today" state after finishing all activities
+- [x] **ACTV-04**: User can complete a context match activity
+- [x] **ACTV-05**: User sees a "completed today" state after finishing all activities
 
 ### Auth
 
@@ -30,9 +30,9 @@
 
 ### Gamification
 
-- [ ] **GAME-01**: User earns points for each activity completed
-- [ ] **GAME-02**: User earns a daily badge after completing all activities
-- [ ] **GAME-03**: User can view their current streak counter
+- [x] **GAME-01**: User earns points for each activity completed
+- [x] **GAME-02**: User earns a daily badge after completing all activities
+- [x] **GAME-03**: User can view their current streak counter
 - [ ] **GAME-04**: User can save words to favorites (login required)
 - [ ] **GAME-05**: User can view activity history across past words (login required)
 - [ ] **GAME-06**: User can see a mastery rating (mastered / learning / seen) per word (login required)
@@ -53,8 +53,8 @@
 
 - [x] **PLAT-01**: App is installable as a PWA with home screen icon
 - [x] **PLAT-02**: Today's word is available offline via service worker cache
-- [ ] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
-- [ ] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
+- [x] **PLAT-03**: App supports dark mode (system preference default, manual toggle)
+- [x] **PLAT-04**: Word pages are server-rendered with proper meta tags for SEO
 - [x] **PLAT-05**: Each word page has a dynamic OG image generated via Vercel OG
 
 ## v2 Requirements
@@ -97,23 +97,23 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CONT-01 | Phase 2 → Phase 7 (verify) | Pending |
-| CONT-02 | Phase 2 → Phase 7 (verify) | Pending |
-| CONT-03 | Phase 2 → Phase 7 (verify) | Pending |
-| CONT-04 | Phase 2 → Phase 7 (verify) | Pending |
-| CONT-05 | Phase 2 → Phase 7 (verify) | Pending |
-| ACTV-01 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
-| ACTV-02 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
+| CONT-01 | Phase 2 → Phase 7 (verify) | Complete |
+| CONT-02 | Phase 2 → Phase 7 (verify) | Complete |
+| CONT-03 | Phase 2 → Phase 7 (verify) | Complete |
+| CONT-04 | Phase 2 → Phase 7 (verify) | Complete |
+| CONT-05 | Phase 2 → Phase 7 (verify) | Complete |
+| ACTV-01 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
+| ACTV-02 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 | ACTV-03 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
-| ACTV-04 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
-| ACTV-05 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
+| ACTV-04 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
+| ACTV-05 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 | AUTH-01 | Phase 1 | Complete |
 | AUTH-02 | Phase 1 | Complete |
 | AUTH-03 | Phase 1 → Phase 8 (tech debt / deferred) | Deferred |
 | AUTH-04 | Phase 1 | Complete |
-| GAME-01 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
-| GAME-02 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
-| GAME-03 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Pending |
+| GAME-01 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
+| GAME-02 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
+| GAME-03 | Phase 3 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 | GAME-04 | Phase 3 → Phase 7 (verify) | Pending |
 | GAME-05 | Phase 3 → Phase 7 (verify) | Pending |
 | GAME-06 | Phase 3 → Phase 7 (verify) | Pending |
@@ -125,8 +125,8 @@
 | PIPE-03 | Phase 1 | Complete |
 | PLAT-01 | Phase 4 | Complete |
 | PLAT-02 | Phase 4 | Complete |
-| PLAT-03 | Phase 2 → Phase 7 (verify) | Pending |
-| PLAT-04 | Phase 2 → Phase 7 (verify) | Pending |
+| PLAT-03 | Phase 2 → Phase 7 (verify) | Complete |
+| PLAT-04 | Phase 2 → Phase 7 (verify) | Complete |
 | PLAT-05 | Phase 2 → Phase 6 (fix) + Phase 7 (verify) | Complete |
 
 **Coverage:**
