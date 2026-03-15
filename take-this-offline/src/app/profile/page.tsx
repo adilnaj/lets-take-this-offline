@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { SiteHeader } from '@/components/site-header'
 import { Badge } from '@/components/ui/badge'
+import { NotificationSettings } from '@/components/notification-settings'
 import { Flame } from 'lucide-react'
 import Link from 'next/link'
 
@@ -33,6 +34,20 @@ export default async function ProfilePage() {
     .eq('user_id', user.id)
     .order('updated_at', { ascending: false })
     .limit(30)
+
+  // Fetch push subscription state
+  const { data: pushSub } = await supabase
+    .from('push_subscriptions')
+    .select('notify_hour, endpoint')
+    .eq('user_id', user.id)
+    .maybeSingle()
+
+  // Fetch email digest pref
+  const { data: emailPref } = await supabase
+    .from('email_digest_prefs')
+    .select('enabled')
+    .eq('user_id', user.id)
+    .maybeSingle()
 
   return (
     <main>
@@ -113,6 +128,14 @@ export default async function ProfilePage() {
             </ul>
           )}
         </section>
+
+        {/* Notifications */}
+        <NotificationSettings
+          initialPushEnabled={!!pushSub}
+          initialPushHour={pushSub?.notify_hour ?? 8}
+          initialEmailEnabled={emailPref?.enabled ?? false}
+          userEmail={user.email ?? ''}
+        />
 
       </div>
     </main>
