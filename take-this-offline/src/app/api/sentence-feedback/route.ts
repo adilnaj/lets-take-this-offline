@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 import { createClient } from '@/lib/supabase/server'
 
-const FEEDBACK_MODEL = 'claude-haiku-3-5'
+const FEEDBACK_MODEL = 'claude-haiku-4-5-20251001'
 const anthropic = new Anthropic()
 
 export async function POST(req: NextRequest) {
