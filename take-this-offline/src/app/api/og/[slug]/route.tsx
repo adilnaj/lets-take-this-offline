@@ -2,13 +2,14 @@ import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server'
 import { getWordBySlug } from '@/lib/words'
 
-export const runtime = 'edge'   // next/og runs on Edge runtime
+export const runtime = 'edge'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const word = await getWordBySlug(params.slug)
+  const { slug } = await params
+  const word = await getWordBySlug(slug)
 
   if (!word) {
     return new Response('Not found', { status: 404 })
