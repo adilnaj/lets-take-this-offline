@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 08-03-PLAN.md (seed test stubs → it.skip, vitest exits 0)
-last_updated: "2026-03-16T01:57:53.552Z"
+stopped_at: Completed 08-01-PLAN.md (AUTH-03 documentation correction — mark as deferred)
+last_updated: "2026-03-16T01:58:05.754Z"
 last_activity: 2026-03-14 — Plan 04-01 complete (notifications schema + TypeScript types)
 progress:
   total_phases: 8
@@ -79,6 +79,7 @@ Progress: [████░░░░░░] 44%
 | Phase 07-verify-phases-02-03 P03 | 5 | 2 tasks | 2 files |
 | Phase 08-resolve-tech-debt P02 | 2 | 1 tasks | 1 files |
 | Phase 08-resolve-tech-debt P03 | 1 | 1 tasks | 3 files |
+| Phase 08-resolve-tech-debt P01 | 1 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -154,6 +155,7 @@ Recent decisions affecting current work:
 - [Phase 07-verify-phases-02-03]: DAILY_LIMIT set to 10 for sentence-feedback route; read-then-upsert counter pattern used (no extra RPC migration needed); rate-limit check placed between auth guard and body parse
 - [Phase 08-resolve-tech-debt]: match_similar_words Args typed as string/number; Returns as array matching RETURNS TABLE SQL signature
 - [Phase 08-resolve-tech-debt]: it.skip used (not it.todo) to keep test body with skip rationale comment visible to engineers
+- [Phase 08-resolve-tech-debt]: AUTH-03 treated as deferred (not complete) — code was wired but Apple Developer account never configured, making the feature non-functional at v1
 
 ### Pending Todos
 
@@ -166,6 +168,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-16T01:57:42.167Z
-Stopped at: Completed 08-03-PLAN.md (seed test stubs → it.skip, vitest exits 0)
+Last session: 2026-03-16T01:58:05.749Z
+Stopped at: Completed 08-01-PLAN.md (AUTH-03 documentation correction — mark as deferred)
 Resume file: None
