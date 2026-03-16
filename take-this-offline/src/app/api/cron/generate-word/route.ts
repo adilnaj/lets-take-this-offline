@@ -24,8 +24,9 @@ export async function GET(req: NextRequest) {
     process.env.SUPABASE_SERVICE_ROLE_KEY!
   )
 
-  // 2. Idempotency: skip if today's word already exists
-  const today = new Date().toISOString().split('T')[0]
+  // 2. Idempotency: skip if target date's word already exists
+  const dateParam = req.nextUrl.searchParams.get('date')
+  const today = dateParam ?? new Date().toISOString().split('T')[0]
   const { data: existing } = await supabase
     .from('words')
     .select('id')
