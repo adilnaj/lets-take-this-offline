@@ -189,7 +189,17 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      match_similar_words: {
+        Args: {
+          query_embedding: string
+          similarity_threshold: number
+        }
+        Returns: {
+          id: string
+          title: string
+          distance: number
+        }[]
+      }
     }
     Enums: {
       word_category:
