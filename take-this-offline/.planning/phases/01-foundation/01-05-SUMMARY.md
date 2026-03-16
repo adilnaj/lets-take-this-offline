@@ -59,7 +59,7 @@ patterns-established:
   - "Supabase SSR middleware: getUser() is the correct API for server-side session validation and refresh"
   - "Next.js pages reading auth state must be force-dynamic to avoid prerender errors"
 
-requirements-completed: [AUTH-01, AUTH-02, AUTH-03, AUTH-04]
+requirements-completed: [AUTH-01, AUTH-02, AUTH-04]
 
 # Metrics
 duration: 10min
