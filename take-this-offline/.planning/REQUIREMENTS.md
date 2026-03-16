@@ -25,7 +25,7 @@
 
 - [x] **AUTH-01**: User can sign up and sign in with email and password
 - [x] **AUTH-02**: User can sign in with Google OAuth
-- [ ] **AUTH-03**: User can sign in with Apple OAuth
+- [ ] **AUTH-03**: User can sign in with Apple OAuth _(deferred: code wired, Apple Developer account not configured — post-v1)_
 - [x] **AUTH-04**: User session persists across browser refresh
 
 ### Gamification
