@@ -3,9 +3,14 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import { buildPrompt, fetchHNSignals, checkDuplicate } from '@/lib/pipeline'
 
 describe('buildPrompt', () => {
-  it('includes headlines in prompt', () => {
+  it('includes headlines as context in prompt', () => {
     const prompt = buildPrompt('AI is booming\nCloud spending up', [])
     expect(prompt).toContain('AI is booming')
+  })
+
+  it('instructs Claude not to pick a term that mirrors a headline topic', () => {
+    const prompt = buildPrompt('Quarterly earnings disappoint', [])
+    expect(prompt).toContain('do NOT pick a term that directly mirrors a headline topic')
   })
 
   it('includes existing titles in exclusion list', () => {
@@ -17,6 +22,11 @@ describe('buildPrompt', () => {
   it('returns non-empty prompt even with no headlines', () => {
     const prompt = buildPrompt('', [])
     expect(prompt.length).toBeGreaterThan(20)
+  })
+
+  it('prompts for category diversity', () => {
+    const prompt = buildPrompt('', [])
+    expect(prompt).toContain('Strategy, Tech, Finance, HR, Operations, Marketing, Legal')
   })
 })
 

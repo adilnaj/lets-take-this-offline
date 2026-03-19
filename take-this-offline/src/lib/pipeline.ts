@@ -27,11 +27,14 @@ export const WORD_CONTENT_SCHEMA = {
 /**
  * Build the Claude prompt for word generation.
  * Pass existing titles so Claude avoids re-generating already-covered terms.
+ * Headlines are used only as context for examples — not to drive term selection —
+ * so that trending news topics (e.g. earnings season) don't cause the same
+ * category of word to be generated repeatedly.
  */
 export function buildPrompt(headlines: string, existingTitles: string[]): string {
   const headlinesSection = headlines.trim().length > 0
-    ? `Here are today's trending Hacker News headlines for context:\n${headlines}`
-    : 'No trending stories available — use recent business/tech trends from 2025-2026.'
+    ? `Here are today's Hacker News headlines. Use them only to make definitions and examples feel current and relatable — do NOT pick a term that directly mirrors a headline topic:\n${headlines}`
+    : ''
 
   const exclusionSection = existingTitles.length > 0
     ? `\n\nDo not choose any of the following already-covered terms: ${existingTitles.join(', ')}.`
@@ -43,8 +46,10 @@ ${headlinesSection}
 
 Choose ONE specific business or technology jargon term that:
 - A professional would encounter in meetings, emails, or presentations
-- Is currently trending or widely used in corporate/startup environments
+- Is widely used in corporate or startup environments
 - Has not been covered yet${exclusionSection}
+
+Pick from across all categories — Strategy, Tech, Finance, HR, Operations, Marketing, Legal, or Other — prioritising whichever category has been covered least recently. Avoid terms semantically close to anything already in the covered list above.
 
 Generate comprehensive educational content for this term. Return JSON matching the required schema exactly.`
 }
